@@ -1,0 +1,21 @@
+using namespce std;
+
+class Arbre{
+	private:
+		struct Noeud{
+			int cle;
+			Noeud* gauche;
+			Noeud* droite;
+		}
+	Noeud* root;
+	void AjouterNoeudPrive(int cle, Noeud* Ptr);
+	void AfficherArbrePrive(Noeud* Ptr);
+	void AfficherArbreInverse(Noeud* Ptr);
+	void AjouterNoeudInverse(int cle, Noeud* Ptr);
+	public:
+		Arbre();
+		Noeud* CreationFeuille(int cle);
+		void AjouterNoeud(int cle);
+		void AjouterNoeudInverse(int cle);
+		void AfficherArbre();
+};
